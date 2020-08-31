@@ -23,6 +23,8 @@
       &__name
         font-size: 40px        
         line-height: 48px
+      &__button
+        padding: 20px 80px
     
 @media ( max-width: 768px )
   .container
@@ -30,19 +32,49 @@
     width: 92%
   
   .header
-    margin-bottom: 50px
-
+    margin-bottom: 40px
   .hero
     &-wrapper 
       flex-direction: column-reverse
+    &-avatar
+      width: 200px
+      height: 200px
+      border: 5px solid $gold
     &-text
       display: flex
       flex-direction: column
       text-align: center
       align-items: center
+    &__button
+      padding: 16px 60px
+      
   
 @media ( max-width: 576px )
   .container
     max-width: 500px
-  
+  .hero
+    &-avatar
+      width: 120px
+      height: 120px
+      margin-bottom: 10px
+    &-text
+      &__hello
+        display: none
+        &_mobile
+          display: block
+          margin-top: 0
+          margin-bottom: 10px
+          font-size: 16px
+          line-height: 27px
+      &__name
+        font-size: 24px
+        line-height: 28px
+        margin-bottom: 10px
+      &__description
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 20px
+      &__button
+        padding: 12px 60px
+
   
