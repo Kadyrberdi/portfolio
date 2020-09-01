@@ -48,7 +48,19 @@
     &__button
       padding: 16px 60px
       
-  
+  .skills
+    &__cards
+      display: grid
+      grid-template-columns: 1fr 1fr
+    &__card2
+      margin-top: 136px
+    &__name
+      font-size: 20px
+      line-height: 22px
+    &__icons
+      width: 58px
+      height: 58px
+
 @media ( max-width: 576px )
   .container
     max-width: 500px
@@ -77,4 +89,21 @@
       &__button
         padding: 12px 60px
 
-  
+  .skills
+    &__cards
+      display: grid
+      grid-template-columns: 1fr 
+      text-align: center      
+    &__card2
+      margin-top: 0
+    &__title
+      text-align: center
+    &__name
+      font-size: 18px
+      line-height: 28px
+    &__text
+      font-size: 14px
+      line-height: 28px
+    &__icons
+      width: 50px
+      height: 50px
